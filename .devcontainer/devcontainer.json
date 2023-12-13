@@ -1,0 +1,43 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+	"name": "Base Template",
+
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:1.0.9-bookworm@sha256:33ff3550308c99ea0e0d63b61a03e8590588aee7c15c83077cb3cebed49a8861",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+    "features": {
+		"ghcr.io/guiyomh/features/just:0.1.0": {},
+		"ghcr.io/devcontainers-contrib/features/actionlint:1": {
+			"version": "latest"
+		},
+		"ghcr.io/guiyomh/features/just:0": {
+			"version": "latest"
+		}
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Configure tool-specific properties.
+	"customizations": {
+    "vscode": {
+      "extensions": [
+        "github.vscode-github-actions",
+        "editorconfig.editorconfig",
+        "seatonjiang.gitmoji-vscode",
+        "pkief.material-icon-theme",
+        "mutantdino.resourcemonitor",
+        "github.copilot",
+        "github.copilot-chat"
+      ]
+    }
+  }
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}// For format details, see https://aka.ms/devcontainer.json. For config options, see the
